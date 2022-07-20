@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+   <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body class="">
+    <section class="d-flex" style="align-items: stretch;">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+                <strong>BS</strong>
+            </div>
+
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#">
+                        <i style="color: #e8e8e8;" class="bi bi-house-door-fill"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i style="color: #ffffff;" class="bi bi-compass"></i>
+                        Explore
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i style="color: #ffffff;" class="bi bi-play-btn"></i>
+                        Shorts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                         <i style="color: #ffffff;" class="bi bi-bookmarks"></i>
+                        Bookmarks
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i style="color: #ffffff;" class="bi bi-clock-history"></i>
+                        History
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href=""><img src="media/dp01.jpg" class="rounded-circle" width="30px" alt="">MrBeast</a>
+                </li>
+                <li>
+                    <a href=""><img src="media/dp02.jpg" class="rounded-circle" width="30px" alt="">Karikku</a>
+                </li>
+                <li>
+                    <a href=""><img src="media/dp03.jpg" class="rounded-circle" width="30px" alt="">GOM Malayalam</a>
+                </li>
+                <li>
+                    <a href=""><img src="media/dp04.jpg" class="rounded-circle" width="30px" alt="">Akshath srivasthava</a>
+                </li>
+                <li>
+                    <a href=""><img src="media/dp05.jpg" class="rounded-circle" width="30px" alt="">The Rock</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Toggle Sidebar</span>
+            </button>
+        </section>
+    </section>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+       <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+</body>
+</html>
